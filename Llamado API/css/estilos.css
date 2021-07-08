@@ -1,0 +1,562 @@
+html, body{
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-image: url(../img/fondo-borroso-gris-claro-blanco-degradado-radial_53562-6788.jpg);
+}
+input{
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.eliminar{
+	width:20%;
+	margin-bottom:5%;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+#btn_eliminar2{
+	width:100%
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 0%;   
+}
+
+.logo{
+    margin-right: 0;
+    margin-left: auto;
+    position: absolute;
+    display: block;
+    width: 31%;
+    top: -6.5%;
+    max-width: 100%;
+}
+
+.banner{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    position: relative;
+    
+}
+
+.fb{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 90%;
+}
+
+.instagram{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 95%;
+}
+.navbar2 {
+    font-family: Verdana;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    background-color: rgb(212, 208, 208);
+}
+
+.item{
+    padding-left: 20px;
+    
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    background-color:rgb(143, 192, 224);
+    color:black;
+}
+.juegos{
+     margin-top: 80px;
+     margin-left:40px;
+}
+.fotoindex{
+  width:150px;
+}
+.juegosfooter{
+  margin-bottom:50px;
+}
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: ab; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+  }
+  .modal-content-nes{
+    max-width: 450px; 
+    
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+.footer {
+  position: relative;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: rgb(212, 208, 208);
+  color:rgb(77, 72, 72);
+  }
+
+.filtro{
+    padding-right:50px;
+    padding-top: 20px;
+  }
+.filtro button{
+    font-size: 15px;
+  }
+.paginador{
+  padding-top: 40px;
+}
+.faq{
+  margin:50px;
+  margin-left:60px;
+  color:rgb(101, 47, 163);
+}
+.faqpreguntas{
+  margin-left:60px;
+  margin-bottom:20px;
+}
+.botonfaq .btn{
+  width: 20%;
+}
+
+.cart img{
+  padding-left: 110px;
+  margin-top: -30px;
+}
+
+.formularioRegistro
+{
+  margin-left: 3%;
+  margin-top: 2%;
+  max-width: 35%;
+
+}
+
+.rut{
+  position:absolute;
+  max-width: 65%;
+  
+}
+
+.nombres{
+  position:relative;
+  max-width: 65%;
+
+}
+
+.apellidos{
+  position:relative;
+  max-width: 65%;
+}
+
+.correo2{
+  position:relative;
+  max-width: 65%;
+}
+
+.tituloFormulario
+{
+  margin-left: 2%;
+  margin-top: 1%;
+  max-width: 50%;
+  margin-inline: 15%;
+  color:rgb(101, 47, 163);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.botonAceptar 
+{
+  margin-left: 3%;
+  margin-top: 1%;
+  position:absolute;
+}
+.botonCancelar
+{
+  margin-left: 11%;
+  margin-top: 2.2%;
+  margin-bottom: 50px;
+}
+.desglose{
+  margin-bottom: 60px;
+}
+
+.botonTotal 
+{
+  margin-left: 0%;
+  margin-top: 1%;
+  position:absolute;
+}
+
+.botonCancelarVenta
+{
+  margin-left: 35%;
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.botones{
+  background-color: cornflowerblue;
+}
+.carro{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 14%;
+    left: 95%;
+    color:rgb(211, 211, 211);
+}
+.carro:hover{
+  color:dodgerblue;
+}
+.carrovacio{
+  text-align: center;
+  padding-top: 4%;
+}
+
+.icocarro{
+  padding-left: 44%;
+  padding-top: 6%;
+  padding-bottom: 100px;
+}
+
+.info{
+  margin-left: 5%;
+}
+.encuentranos{
+  margin-left:35%;
+  position:absolute;
+  margin-top:-12.5%
+}
+
+.separador{
+  margin-left: 5%;
+  color:black;
+}
+.separador2{
+  margin-left: 35%;
+  color:black;
+  margin-top:-10.4%;
+  position:absolute;
+}
+.direccion{
+  margin-left:35%;
+  position:absolute;
+  margin-top:-7.2%;
+}
+.address{
+  margin-left:32.5%;
+  position:absolute;
+  margin-top:-8.2%;
+  color:rgb(179, 6, 6);
+}
+
+.mail{
+  padding-left: 5%;
+  position: absolute;
+  color:black
+  
+}
+
+.whatsapp{
+  padding-left: 5%;
+  position: absolute;
+  margin-top: 2%;
+  color:green
+  
+}
+
+.correo{
+  color:rgb(77, 72, 72)k;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 8%;
+  margin-top:20px;
+}
+.correo a p{
+  color:rgb(77, 72, 72);
+}
+
+.telefono a p{
+  color:rgb(77, 72, 72);
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 8%;
+  margin-top: 3.5%;
+  margin-bottom:0px;
+  
+}
+.anio{
+  text-align: center;
+}
+.logofacebook{
+  float: right;
+  margin-top: -15%;
+  margin-bottom:0px;
+  padding-right: 4.6%;
+  color:blue;
+}
+
+.logoinstagram{
+  float:right;
+  margin-top: -11%;
+  margin-bottom:0px;
+  padding-right: 4%;
+  color:coral
+}
+.colorinsta{
+  color:coral;
+}
+.faq-footer{
+  float:right;
+  margin-right:25%;
+  font-size:20px;
+  margin-top:-12.5%;
+}
+.faq-footer a p{
+  color:rgb(77, 72, 72);
+  text-decoration: none;
+}
+.contacto-footer{
+  float:right;
+  margin-right:21.7%;
+  font-size:20px;
+  margin-top:-8.5%;
+
+}
+.contacto-footer a p{
+  color:rgb(77, 72, 72);
+  text-decoration: none;
+}
+.trabaja-footer{
+  float:right;
+  margin-right:14%;
+  font-size:20px;
+  margin-top:-4.5%
+
+}
+.trabaja-footer a p{
+  color:rgb(77, 72, 72);
+  text-decoration: none;
+}
+.form-contacto{
+  width: 600px;
+  margin: auto;
+  background: grey;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.texto-contacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.entrada-uno{
+    margin-top: 10px;
+}
+.entrada-dos{
+    margin-top: 10px;
+}
+.entrada-tres{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.trabaja{
+  width: 600px;
+  margin: auto;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#form-input{
+  margin-bottom: 20px;
+}
+form h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.contact{
+  color: #fff;
+  font-size: 18px;
+}
+input, textarea{
+  width: 100%;
+  
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+.inUno{
+  margin-bottom: 10px;
+}
+.inDos{
+  margin-bottom: 10px;
+}
+.inTres{
+  margin-bottom: 10px;
+}
+
+textarea{
+  min-height: 300px;
+  max-height: 600px;
+  max-width: 100%;
+  min-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#boton{
+  margin-top: 10px;
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover{
+  cursor: pointer;
+}
+.fotocarrusel{
+  width:100%;
+  margin:auto;
+
+}
+.carrusel{
+  margin-top: 40px;
+  height: 500px;
+}
+
+.row-one{
+  margin-top: 125px;
+}
+
+.filas{
+  margin-top: 60px;
+}
+
+.destacados{
+  padding-top: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(101, 47, 163);
+  font-weight: 600;
+}
+
+.recordartexto
+{
+  padding-left: 20px;
+}
+
+.recordarcheck{
+  left:40px;
+}
+.contrasenaOlvidada{
+  margin-left:16px;
+}
+
+.cuerpoModal{
+  padding-bottom:0px;
+}
+
+
+.formularioApi{
+	margin-top:5%;
+	width:40%;
+}
+
+.guardarApi{
+	margin-top:3%;
+	margin-bottom:5%;
+}
