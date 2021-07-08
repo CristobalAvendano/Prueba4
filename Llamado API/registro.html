@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/icon.jpg" />
+    <script src="https://kit.fontawesome.com/4afc30c9a9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body >
+    <div>
+        <img src="img/banner2.jpg" class="banner" alt="banner">
+        <a href="index.html">
+            <img src="img/Logo_123Bits.png" class="logo" alt="logo"></a>
+        <a href="http://www.facebook.com/123bitscl" target="_blank">
+            <img src="img/facebook.png" class="fb" alt="facebook"></a>
+        <a href="http://www.instagram.com/123bitscl" target="_blank">
+            <img src="img/instagram.png" class="instagram" alt="instagram"></a>
+        <a href="carro.html">
+            <span class="fas fa-shopping-cart fa-2x carro"></span></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar2" style="background-color: hsl(242, 28%, 76%);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Consolas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: hsl(242, 28%, 76%);">
+                            <li><a class="dropdown-item" href="#">NES</a></li>
+                            <li><a class="dropdown-item" href="#">Super Nintendo</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo 64</a></li>
+                            <li><a class="dropdown-item" href="#">Gamecube</a></li>
+                            <li><a class="dropdown-item" href="#">Gameboy</a></li>
+                        </ul>
+                    <li class="nav-item dropdown item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Juegos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: hsl(242, 28%, 76%);">
+                            <li><a class="dropdown-item" href="jnes.html">NES</a></li>
+                            <li><a class="dropdown-item" href="jsnes.html">Super Nintendo</a></li>
+                            <li><a class="dropdown-item" href="jn64.html">Nintendo 64</a></li>
+                            <li><a class="dropdown-item" href="#">Gamecube</a></li>
+                            <li><a class="dropdown-item" href="#">Gameboy</a></li>
+                            <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="#">Sega</a></li>
+                        </ul>
+                    <li class="nav-item item">
+                        <a class="nav-link access" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="registro.html">
+            <button type="button" class="btn btn-danger mr-sm-2">Registro</button>
+        </a>
+        <button type="button" class="btn btn-danger mr-sm-2" data-toggle="modal"
+            data-target="#modal_login">Login</button>
+
+
+        <!-- PROBANDO FORMULARIO DE REGISTRO   -->
+
+
+
+
+
+
+        <!--Modal de Login / Registro -->
+        <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¡BIENVENIDO!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body cuerpoModal">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Correo</label>
+                                <input type="text" class="form-control" id="txt_correo2">
+								<p><small id="lbl_correo2" class="form-text text-danger">El correo no puede estar vacio</small></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-pass" class="col-form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="txt_contrasena">
+								<p><small id="lbl_contrasena1" class="form-text text-danger">La contraseña no puede estar vacia</small></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contrasenaOlvidada">
+                        <p>¿Olvidaste tu contraseña?</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input recordarcheck" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label recordartexto" for="flexCheckDefault">
+                            Recordar contraseña
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="fn_correoVacioLogin(), fn_contrasenaVacia(), fn_loginCorrecto();"
+                            >Ingresar</button>
+						<p><small id="lbl_error_login" class="form-text text-danger">Credenciales incorrectas</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--TITULO DEL FORMULARIO-->
+    <h1 class="tituloFormulario"> FORMULARIO DE REGISTRO </h1>
+
+
+
+
+    <!-- PROBANDO FORMULARIO DE REGISTRO   -->
+    <div class="formularioRegistro">
+        <p><small id="lbl_nombre" class="form-text text-danger">Debe ingresar un nombre</small></p>
+        <div class="input-group mb-3 nombres">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">1</span>
+            </div>
+            <input type="text" id="txt_nombre" class="form-control" placeholder="Nombre (*)">
+        </div>
+        <p><small id="lbl_apellido" class="form-text text-danger">Debe ingresar un apellido</small></p>
+        <div class="input-group mb-3 apellidos">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">2</span>
+            </div>
+            <input type="text" id="txt_apellido" class="form-control" placeholder="Apellido (*)">
+        </div>
+        <p><small id="lbl_correo" class="form-text text-danger">Debe ingresar un correo electronico</small></p>
+        <div class="input-group mb-3 correo2">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">3</span>
+            </div>
+            <input type="email" id="txt_correo" class="form-control" placeholder="Correo Electronico (*)">
+        </div>
+
+        <p><small id="lbl_contrasena2" class="form-text text-danger">Debe ingresar una contraseña valida</small></p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">4</span>
+            </div>
+            <input type="password" id="txt_contrasena_registro" class="form-control mr-sm-2" placeholder="Contraseña">
+
+            <input type="password" id="txt_contrasena2" class="form-control " placeholder="Confirmar contraseña">
+        </div>
+        <p><small id="lbl_contrasena3" class="form-text text-danger">Las contraseñas deben coincidir</small></p>
+        <label>
+            <h6>Cual es tu consola favorita?</h6><i>* Esto sera usado para informarte de actualizaciones sobre estas
+                consolas.</i>
+        </label>
+        <p><small id="lbl_consola" class="form-text text-danger">Debes seleccionar una consola</small></p>
+        <div class="input-group mb-3 rut">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">5</span>
+            </div>
+            <select class="form-control" id="cmb_consolas">
+                <option>-- Seleccione --</option>
+                <option>Nintendo</option>
+                <option>PlayStation</option>
+                <option>Sega</option>
+				<option>Xbox</option>
+            </select>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalConteo" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalConteo">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="txt_usuario">Usuario registrado correctamente!</p>
+                    <p> </p>
+                    <p id="txt_conteo"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelarConteo"
+                        data-dismiss="modalConteo">Mantenerse
+                        en la
+                        pagina</button>
+                    <a href='login.html'><button type="button" class="btn btn-primary">Ir al inicio</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="botonAceptar">
+        <button type="button"
+            onclick="fn_nombreVacio(), fn_apellidoVacio(), fn_correoVacio(),fn_contrasenaVacia(), fn_contrasenasIguales(),fn_consolaVacia(),fn_Registro();"
+            class="btn btn-info mr-sm-2"> Aceptar</button>
+    </div>
+    <div class="botonCancelar">
+        <button type="button" class="btn btn-danger mr-sm-2" onclick="fn_limpiarFormularioRegistro();"> Cancelar
+        </button>
+    </div>
+    <footer class="footer">
+        <h5 class="info">
+            Informacion de contacto
+        </h5>
+        <p class="separador"> -----------------------------------</p>
+        <div class="mail">
+            <span class="far fa-envelope fa-2x"></span>
+        </div>
+        <div class="correo">
+            <a href="mailto:123bitscl@gmail.com">
+                <p>123bitscl@gmail.com</p>
+            </a>
+        </div>
+        <div class="whatsapp">
+            <span class="fab fa-whatsapp fa-2x"></span>
+        </div>
+        <div class="telefono">
+            <a href="https://api.whatsapp.com/send?phone=56900000000" target="_blank">
+                <p>+569 00000000</p>
+            </a>
+        </div>
+        <a href="http://www.facebook.com/123bitscl" target="_blank">
+            <div class="logofacebook">
+                <span class="fab fa-facebook-f fa-2x"></span>
+        </a>
+        </div>
+        <a href="http://www.instagram.com/123bitscl" class="colorinsta" target="_blank">
+            <div class="logoinstagram">
+                <span class="fab fa-instagram fa-2x"></span>
+        </a>
+        </div>
+        <div class="address">
+            <span class="fas fa-map-marker-alt fa-2x"></span>
+        </div>
+        <h5 class="encuentranos">
+            Encuentranos en
+        </h5>
+        <p class="separador2"> ------------------------</p>
+        <div class="direccion">
+            <p>
+                Moneda #970 (Eurocentro) local 53
+            </p>
+            <a href="https://www.google.cl/maps/place/Eurocentro/@-33.4420223,-70.650213,15z/data=!4m5!3m4!1s0x0:0xc5710ab2432b6373!8m2!3d-33.4420223!4d-70.650213"
+                target="_blank">
+                <p>Ver mapa</p>
+            </a>
+        </div>
+        <div class="faq-footer">
+            <a href="faq.html">
+                <p>
+                    FAQ
+                </p>
+            </a>
+        </div>
+        <div class="contacto-footer">
+            <a href="contacto.html">
+                <p>
+                    Contacto
+                </p>
+            </a>
+        </div>
+        <div class="trabaja-footer">
+            <a href="trabaja.html">
+                <p>
+                    Trabaja con nosotros
+                </p>
+            </a>
+        </div>
+        <div class="anio">
+            <p>
+                123Bits©2021
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src='js/scripts.js'></script>
+
+
+    </html>

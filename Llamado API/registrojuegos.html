@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123Bits Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/icon.jpg" />
+    <script src="https://kit.fontawesome.com/4afc30c9a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <img src="img/banner2.jpg" class="banner" alt="banner">
+        <a href="index.html">
+            <img src="img/Logo_123Bits.png" class="logo" alt="logo"></a>
+        <a href="http://www.facebook.com/123bitscl" target="_blank">
+            <img src="img/facebook.png" class="fb" alt="facebook"></a>
+        <a href="http://www.instagram.com/123bitscl" target="_blank">
+            <img src="img/instagram.png" class="instagram" alt="instagram"></a>
+        <a href="carro.html">
+            <span class="fas fa-shopping-cart fa-2x carro"></span></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar2" style="background-color: hsl(242, 28%, 76%);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Consolas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: hsl(242, 28%, 76%);">
+                            <li><a class="dropdown-item" href="#">NES</a></li>
+                            <li><a class="dropdown-item" href="#">Super Nintendo</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo 64</a></li>
+                            <li><a class="dropdown-item" href="#">Gamecube</a></li>
+                            <li><a class="dropdown-item" href="#">Gameboy</a></li>
+                        </ul>
+                    <li class="nav-item dropdown item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Juegos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: hsl(242, 28%, 76%);">
+                            <li><a class="dropdown-item" href="jnes.html">NES</a></li>
+                            <li><a class="dropdown-item" href="jsnes.html">Super Nintendo</a></li>
+                            <li><a class="dropdown-item" href="jn64.html">Nintendo 64</a></li>
+                            <li><a class="dropdown-item" href="#">Gamecube</a></li>
+                            <li><a class="dropdown-item" href="#">Gameboy</a></li>
+                            <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="#">Sega</a></li>
+                        </ul>
+                    <li class="nav-item item">
+                        <a class="nav-link access" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+        <a href="registro.html">
+            <button type="button" class="btn btn-danger mr-sm-2">Registro</button>
+        </a>
+        <button type="button" class="btn btn-danger mr-sm-2" data-toggle="modal"
+            data-target="#modal_login">Login</button>
+
+
+        <!--Modal de Login / Registro -->
+        <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¡BIENVENIDO!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body cuerpoModal">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Usuario</label>
+                                <input type="text" class="form-control" id="txt_usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-pass" class="col-form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="txt_contrasena">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contrasenaOlvidada">
+                        <p>¿Olvidaste tu contraseña?</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input recordarcheck" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label recordartexto" for="flexCheckDefault">
+                            Recordar contraseña
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                            data-dismiss="modal">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <body class="m-0 row justify-content-center">
+	<h1 class="tituloFormulario"> Registro de Productos </h1>
+		 <form class="formularioApi">
+		  <div class="form-group row">
+			<class="col-sm-2 col-form-label">Codigo</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="txt_codigo" placeholder="Codigo">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<class="col-sm-2 col-form-label">Nombre</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="txt_nombre" placeholder="Nombre">
+			</div>
+		  </div>
+			<div class="form-group col-md-4">
+			  <label>Consola</label>
+			  <select id="cmb_consola" class="form-control">
+				<option>-- Consola --</option>
+						<option>Nintendo</option>
+						<option>Sega</option>
+						<option>PlayStation</option>
+						<option>Xbox</option>
+			  </select>
+			</div>
+			<div class="form-group row">
+				<class="col-sm-2 col-form-label">Valor</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="txt_valor" placeholder="Valor">
+				</div>
+			  </div>	
+				<div class="form-check">
+					  <input class="form-check-input" type="radio" name="radioEstado" id="rdb_estado1" value="Nuevo">
+					  <label class="form-check-label" for="rdb_estado1">
+						Nuevo
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="radioEstado" id="rdb_estado2" value="Usado">
+					  <label class="form-check-label" for="rdb_estado2">
+						Usado
+					  </label>
+				</div>
+		  <button type="button" id="btn_almacenar" class="btn btn-primary guardarApi">Guardar Juego</button>		
+				
+		<p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+            aria-expanded="false" aria-controls="collapseExample1">
+            <button type="button" id="btn_mostrarJuegos" class="btn btn-primary">Mostrar Juegos</button>
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample1">
+            <table class="table table-dark table-hover tablajuegos">
+            <tr>
+                <th id="codigo_juego">Codigo</th>
+                <th id="nombre_juego">Nombre</th>
+                <th id="consola_juego">Consola</th>
+                <th id="valor_juego">Precio</th>
+                <th id="estado_juego">Estado</th>
+            </tr>
+        </table>
+    </div>
+	<p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+            aria-expanded="false" aria-controls="collapseExample2">
+            <button type="button" id="btn_eliminar" class="btn btn-primary">Eliminar Juego</button>
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample2">
+		Codigo:
+        <div class="eliminar">
+				<input type="text" id="txt_codigo_eliminar"/>
+				<button type="button" id="btn_eliminar2" class="btn btn-primary">X</button>
+        </div>
+    </div>	
+		</form>         
+    </body>    
+    <footer class="footer">
+        <h5 class="info">
+            Informacion de contacto
+        </h5>
+        <p class="separador"> -----------------------------------</p>
+        <div class="mail">
+            <span class="far fa-envelope fa-2x"></span>
+        </div>
+        <div class="correo">
+            <a href="mailto:123bitscl@gmail.com">
+                <p>123bitscl@gmail.com</p>
+            </a>
+        </div>
+        <div class="whatsapp">
+            <span class="fab fa-whatsapp fa-2x"></span>
+        </div>
+        <div class="telefono">
+            <a href="https://api.whatsapp.com/send?phone=56900000000" target="_blank">
+                <p>+569 00000000</p>
+            </a>
+        </div>
+        <a href="http://www.facebook.com/123bitscl" target="_blank">
+            <div class="logofacebook">
+                <span class="fab fa-facebook-f fa-2x"></span>
+        </a>
+        </div>
+        <a href="http://www.instagram.com/123bitscl" class="colorinsta" target="_blank">
+            <div class="logoinstagram">
+                <span class="fab fa-instagram fa-2x"></span>
+        </a>
+        </div>
+        <div class="address">
+            <span class="fas fa-map-marker-alt fa-2x"></span>
+        </div>
+        <h5 class="encuentranos">
+            Encuentranos en
+        </h5>
+        <p class="separador2"> ------------------------</p>
+        <div class="direccion">
+            <p>
+                Moneda #970 (Eurocentro) local 53
+            </p>
+            <a href="https://www.google.cl/maps/place/Eurocentro/@-33.4420223,-70.650213,15z/data=!4m5!3m4!1s0x0:0xc5710ab2432b6373!8m2!3d-33.4420223!4d-70.650213"
+                target="_blank">
+                <p>Ver mapa</p>
+            </a>
+        </div>
+        <div class="faq-footer">
+            <a href="faq.html">
+                <p>
+                    FAQ
+                </p>
+            </a>
+        </div>
+        <div class="contacto-footer">
+            <a href="contacto.html">
+                <p>
+                    Contacto
+                </p>
+            </a>
+        </div>
+        <div class="trabaja-footer">
+            <a href="trabaja.html">
+                <p>
+                    Trabaja con nosotros
+                </p>
+            </a>
+        </div>
+        <div class="anio">
+            <p>
+                123Bits©2021
+            </p>
+        </div>
+    </footer>
+</body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+<script src='js/scripts.js'></script>
+
+
+</html>
